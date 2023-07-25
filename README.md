@@ -1,6 +1,6 @@
 # 🎓 CampusGuide | Campus Map Web App 🗺️
 
-<img width="500px" height="350px" src="https://www.mak.ac.ug/sites/default/files/Mak-Makererere-University.jpg" alt="Campus Guide" /><img width="500px" height="350px" src="https://darktellers.files.wordpress.com/2019/04/capture.jpg" alt="Campus Guide" />
+<img width="250px" height="150px" src="https://www.mak.ac.ug/sites/default/files/Mak-Makererere-University.jpg" alt="Campus Guide" /><img width="250px" height="150px" src="https://darktellers.files.wordpress.com/2019/04/capture.jpg" alt="Campus Guide" />
 
 ## Table of Contents 📑
 
