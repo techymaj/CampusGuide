@@ -74,12 +74,12 @@ To invoke the enchantment of the Campus Map Web App on your local realm, follow 
 
 The Campus Map Web App is forged with a combination of mystical technologies:
 
-- **Frontend:** HTML, CSS, JavaScript, React.js
+- **Frontend:** HTML, CSS, JavaScript
 - **Mapping:** Mapbox API (or any other suitable mapping service)
-- **Backend:** Node.js, Express.js (for user authentication and other backend services)
+- **Backend:** Django
 - **Database:** MongoDB (for user data and favorites)
 
-## Contributing 🌟
+## Contributing (```pull``` before you ```push```) 🌟
 
 Venture forth, brave souls, and contribute your magic to the Campus Map Web App! 🌠 If you discover any enchanting bugs, possess grand feature suggestions, or wish to share your mystical code improvements, present your contributions as a magical pull request. Before engaging in a major magical undertaking, summon an issue to discuss the mystical changes with the community.
 
