@@ -1,6 +1,6 @@
 # 🎓 Campus Map Web App 🗺️
 
-![Campus Map Web App]([https://example.com/campus-map-screenshot.png](https://www.mak.ac.ug/sites/default/files/Mak-Makererere-University.jpg))
+![Campus Guide](https://www.mak.ac.ug/sites/default/files/Mak-Makererere-University.jpg)
 
 ## Table of Contents 📑
 
