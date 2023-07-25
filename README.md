@@ -38,7 +38,7 @@ To invoke the enchantment of the Campus Map Web App on your local realm, follow 
 
 1. Clone the enchanted repository from GitHub:
    ```bash
-   [git clone https://github.com/your-username/campus-map-web-app.git](https://github.com/techymaj/CampusGuide.git)
+   git clone https://github.com/techymaj/CampusGuide.git
    ```
 
 2. Enter the enchanted realm of the project:
