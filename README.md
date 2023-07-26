@@ -1,88 +1,94 @@
-# 🎓 CampusGuide | Campus Map Web App 🗺️
+# Recess Project Template
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-<img width="250px" height="150px" src="https://www.mak.ac.ug/sites/default/files/Mak-Makererere-University.jpg" alt="Campus Guide" /><img width="250px" height="150px" src="https://darktellers.files.wordpress.com/2019/04/capture.jpg" alt="Campus Guide" />
+![Project Logo](Recess_Project_Template/resources/images/logo.png)
 
-## Table of Contents 📑
+## Table of Contents
+- [Introduction](#introduction)
+- [Documentation](#documentation)
+- [Reports and Presentations](#reports-and-presentations)
+- [Resources](#resources)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
 
-- **[Introduction](#introduction)**
-- **[Features](#features)**
-- **[Installation](#installation)**
-- **[Usage](#usage)**
-- **[Technologies Used](#technologies-used)**
-- **[Contributing](#contributing)**
-- **[License](#license)**
+## Introduction
+Welcome to the Recess Project Template! This repository serves as a structured template for working on your `recess projects` in `groups of five`. It provides guidelines and a well-organized file structure to help you efficiently collaborate, manage your individual work, and deliver successful group projects.
 
-## Introduction 🚀
+### Collaboration Process
+```mermaid
+flowchart LR
 
-Welcome to the dazzling and vibrant Campus Map Web App! 🎉 This magnificent tool is here to help you traverse the sprawling campus with ease and excitement. 🌟 Whether you're a scholarly student, a wise faculty member, or an adventurous visitor, this app will guide you to buildings, classrooms, offices, and all delightful locations with a dash of flair. 🏛️
+subgraph "Repository"
+  Repo((Repository))
+end
 
-Prepare to be mesmerized by the mesmerizing user interface that adds a touch of enchantment to your campus journey! 🌈
+subgraph "User A"
+  fork[Fork]
+  branchA[Branch A]
+end
 
-## Features ✨
+subgraph "User B"
+  branchB[Branch B]
+end
 
-- **Interactive Map:** Behold an enchanting interactive map that beckons you to explore the campus! Zoom in and out, pan around, and witness the magic unfold before your very eyes! ✨
+subgraph "User C"
+  branchC[Branch C]
+end
 
-- **Location Search:** Uncover the secrets of the campus by using the mystic search function! Enter the name of a building, classroom, or any enchanted point of interest, and let the app lead you to its mystical location! 🔍
+subgraph "Pull Request"
+  pullRequest[Pull Request]
+end
 
-- **Building Information:** Click on a building or location, and watch as the app reveals its hidden truths! Learn its name, purpose, opening hours, and any other mystifying details! 📚
+Repo --> fork
+fork --> branchA
+fork --> branchB
+fork --> branchC
 
-- **Route Planning:** Map your own path through the enchanted campus! Plan a journey from your current location or set a starting point, and the app shall weave a magical route to your desired destination! 🗺️
+branchA --> pullRequest
+branchB --> pullRequest
+branchC --> pullRequest
 
-- **User Authentication:** Unlock the secrets of personalization! Students and staff can access their unique features, such as saving favorite locations or tapping into additional campus services! 🔐
+pullRequest --> Repo
+```
 
-- **Responsive Design:** The app magically adapts to any device, be it a grand desktop, a mystical tablet, or a humble smartphone! Enjoy a seamless experience wherever you roam! 📱
+---
+>> Note: Each Group member has to Own a Branch named as his/her name 
 
-## Installation 🧙
+## Documentation
+Find detailed project documentation in the [docs](Recess_Project_Template/docs) folder. It includes:
+- [Project Overview](./docs/README.md): Get an overview of the project's goals, objectives, and how to use this template effectively.
+- [Project Guidelines](./docs/project_guidelines.md): Learn about the best practices for group collaboration, code organization, and documentation.
+  
+- ## Reports and Presentations
 
-To invoke the enchantment of the Campus Map Web App on your local realm, follow these magical incantations:
+Submit your final project reports and group presentation in the [reports](Recess_Project_Template/reports) folder:
 
-1. Clone the enchanted repository from GitHub:
-   ```bash
-   git clone https://github.com/techymaj/CampusGuide.git
-   ```
+- Individual project reports: [reports/report_Student1.pdf](Recess_Project_Template/reports/report_Student1.pdf) - [reports/report_Student5.pdf](Recess_Project_Template/reports/report_Student5.pdf)
+- Group presentation: [reports/group_presentation.pptx](Recess_Project_Template/reports/group_presentation.pptx)
 
-2. Enter the enchanted realm of the project:
-   ```bash
-   cd CampusGuide
-   ```
+## Resources
+The [resources](Recess_Project_Template/resources) folder contains additional resources for the project, including:
+- [Images](Recess_Project_Template/resources/images): Store images related to your project (e.g., diagrams, graphics).
+- [Datasets](Recess_Project_Template/resources/datasets): If applicable, keep datasets used in your project for reproducibility.
 
-3. Unleash the power of dependencies:
-   ```bash
-   npm install
-   ```
+## Getting Started
+To begin your recess project, use the `"Use this template"` button to create your individual project repository based on this template. Follow these steps to get started:
 
-4. Initiate the spellbinding development server:
-   ```bash
-   npm start
-   ```
+1. Clone your individual project repository to your local machine.
+2. Collaborate with your group members on the group project within the [src/group_work](Recess_Project_Template/src/group_work) folder.
+3. Work on your individual contributions within your respective folders in [src/individual_work](./src/individual_work).
+4. Regularly commit and push changes to your repository.
+5. Create pull requests for group project changes and get feedback from your team.
 
-5. Open your web browser and behold the magic at `http://localhost:3000`! 🌐
+## ❗️ Note:
+- The project will run for 2 weeks starting on 24th July 2022 to 11th August 2023 till 11:59 pm.
+- Email us: jeff.geoff.cis@gmail.com cc. ndigezzalivingstone2@gmail.com and send us the link for the GitHub Repository!
 
-## Usage 🧞
+## Contributing
+If you want to contribute to this project template or suggest improvements, please follow the guidelines outlined in [CONTRIBUTING.md](./CONTRIBUTING.md). We welcome your contributions and value your feedback!
 
-1. As you enter the app, the magnificent map of the campus unfurls before you like a breathtaking tapestry.
+## License
+This project is licensed under the [MIT License](./LICENSE). Feel free to use and modify this template for your own recess projects.
 
-2. To unlock the secrets of a specific location, chant its name into the search bar and let the app reveal its mystic presence.
-
-3. The moment your finger touches a building or location, it shall share its arcane knowledge, including its name, purpose, and hours of enchantment.
-
-4. You have the power to chart your course! As you plan a route, the magic of the app will guide you from your current location (if authenticated) or from a point of your choosing to your desired destination!
-
-5. For those attuned to the magical essence of the app, login and access personalized features like saving favorite locations and viewing your class schedule on the map.
-
-## Technologies Used 🛠️
-
-The Campus Map Web App is forged with a combination of mystical technologies:
-
-- **Frontend:** HTML, CSS, JavaScript
-- **Mapping:** Mapbox API (or any other suitable mapping service)
-- **Backend:** Django
-- **Database:** MongoDB (for user data and favorites)
-
-## Contributing (```pull``` before you ```push```) 🌟
-
-Venture forth, brave souls, and contribute your magic to the Campus Map Web App! 🌠 If you discover any enchanting bugs, possess grand feature suggestions, or wish to share your mystical code improvements, present your contributions as a magical pull request. Before engaging in a major magical undertaking, summon an issue to discuss the mystical changes with the community.
-
-## License 📜
-
-This wondrous creation, the Campus Map Web App, is charmed under the [MIT License](https://opensource.org/licenses/MIT). Go forth and use, modify, and distribute it as the winds of the MIT License guide you. May your journey be filled with wonder and delight! 🌌
+---
