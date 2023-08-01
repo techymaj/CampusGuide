@@ -58,13 +58,13 @@ pullRequest --> Repo
 >>
 ## Get Started.
 Steps are:
- -1 - make a virtual env with Django installed.
- -2 - clone repository.
- -3 - pip install -r requirements.txt.
- -4 - python manage.py makemigrations.
- -5 - python manage.py migrate.
- -6 - python manage.py runserver.
- -7 - https://localhost:8000.
+  1 - make a virtual env with Django installed.
+  2 - clone repository.
+  3 - pip install -r requirements.txt.
+  4 - python manage.py makemigrations.
+  5 - python manage.py migrate.
+  6 - python manage.py runserver.
+  7 - https://localhost:8000.
 
 ## Documentation
 Find detailed project documentation in the [docs](Recess_Project_Term2_2023/docs) folder. It includes:
