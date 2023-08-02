@@ -50,12 +50,6 @@ function onPlaceChanged (addy){
         lat_id = 'id-lat-a'
         long_id = 'id-long-a'
     }
-    else{
-        auto = autocomplete_b
-        el_id = 'id-google-address-b'
-        lat_id = 'id-lat-b'
-        long_id = 'id-long-b'
-    }
 
     var geocoder = new google.maps.Geocoder()
     var address = document.getElementById(el_id).value
