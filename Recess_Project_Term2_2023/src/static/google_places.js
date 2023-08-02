@@ -1,9 +1,17 @@
 
-$.getScript( "https://maps.googleapis.com/maps/api/js?key=" + google_api_key + "&libraries=places") 
-.done(function( script, textStatus ) {
-    google.maps.event.addDomListener(window, "load", initAutocomplete())
+// $.getScript( "https://maps.googleapis.com/maps/api/js?key=" + google_api_key + "&libraries=places") 
+// .done(function( script, textStatus ) {
+//     google.maps.event.addDomListener(window, "load", initAutocomplete())
 
-})
+// })
+
+$.getScript( "https://maps.googleapis.com/maps/api/js?key=" + google_api_key + "&libraries=places&callback=initMap") 
+
+function initMap() {
+    // Register the initAutocomplete function to be called after the Google Maps API is loaded
+    initAutocomplete();
+}
+
 
 
 let autocomplete_a;
@@ -44,7 +52,13 @@ function onPlaceChanged (addy){
     let lat_id
     let long_id
 
-    if ( addy === 'a'){
+    if ( addy === 'b'){
+        auto = autocomplete_b
+        el_id = 'id-google-address-b'
+        lat_id = 'id-lat-b'
+        long_id = 'id-long-b'
+    }
+    else{
         auto = autocomplete_a
         el_id = 'id-google-address-a'
         lat_id = 'id-lat-a'
@@ -101,3 +115,16 @@ function CalcRoute(){
     }
 
 }
+
+
+// <!-- JavaScript code with modifications -->
+// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places&callback=initMap"></script>
+// <script>
+
+// $.getScript("https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places&callback=initMap");
+//     function initMap() {
+//         // Register the initAutocomplete function to be called after the Google Maps API is loaded
+//         initAutocomplete();
+//     }
+
+    

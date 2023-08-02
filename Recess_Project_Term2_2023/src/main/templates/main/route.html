@@ -21,26 +21,28 @@
 
 <h3>Campus Guide- Muk</h3>
 <div class="container">
-  <label for="id-google-address-a">Start Address</label>
-  <input
-    type="text"
-    placeholder="Type address"
-    id="id-google-address-a"
-    name="google_address_a"
-  />
+  <form id="myform">
+    <label for="id-google-address-a">Start Address</label>
+    <input
+      type="text"
+      placeholder="Type address"
+      id="id-google-address-a"
+      name="google_address_a"
+    />
 
-  <label for="id-google-address-b">Destination Address</label>
-  <input
-    type="text"
-    placeholder="Type address"
-    id="id-google-address-b"
-    name="google_address_b"
-  />
+    <label for="id-google-address-b">Destination Address</label>
+    <input
+      type="text"
+      placeholder="Type address"
+      id="id-google-address-b"
+      name="google_address_b"
+    />
 
-  <input type="hidden" class="geo" id="id-lat-a" value="" />
-  <input type="hidden" class="geo" id="id-long-a" value="" />
-  <input type="hidden" class="geo" id="id-lat-b" value="" />
-  <input type="hidden" class="geo" id="id-long-b" value="" />
+    <input type="hidden" class="geo" id="id-lat-a" value="" />
+    <input type="hidden" class="geo" id="id-long-a" value="" />
+    <input type="hidden" class="geo" id="id-lat-b" value="" />
+    <input type="hidden" class="geo" id="id-long-b" value="" />
+  </form>
 </div>
 
 {% endblock %} {% block extend_footer %}
