@@ -1,15 +1,13 @@
+$.getScript( "https://maps.googleapis.com/maps/api/js?key=" + google_api_key + "&libraries=places&callback=initMapp") 
 
-// $.getScript( "https://maps.googleapis.com/maps/api/js?key=" + google_api_key + "&libraries=places") 
-// .done(function( script, textStatus ) {
-//     google.maps.event.addDomListener(window, "load", initAutocomplete())
-
-// })
-
-$.getScript( "https://maps.googleapis.com/maps/api/js?key=" + google_api_key + "&libraries=places&callback=initMap") 
-
-function initMap() {
+function initMapp() {
     // Register the initAutocomplete function to be called after the Google Maps API is loaded
     initAutocomplete();
+
+    
+    $("#btn").on("click", function () {
+        CalcRoute();
+    });
 }
 
 
@@ -19,11 +17,17 @@ let autocomplete_b;
 
 function initAutocomplete() {
 
+    // var makerereBounds = new google.maps.LatLngBounds(
+    //     new google.maps.LatLng(0.308578, 32.573719),
+    //     new google.maps.LatLng(0.335596, 32.589585)
+    //   );
+
   autocomplete_a = new google.maps.places.Autocomplete(
    document.getElementById('id-google-address-a'),
    {
-       types: ['address'],
+       types: ['geocode'],
        componentRestrictions: {'country': ['uganda']},
+       //bounds: makerereBounds,
    })
   
   autocomplete_a.addListener('place_changed', function(){
@@ -34,8 +38,9 @@ function initAutocomplete() {
   autocomplete_b = new google.maps.places.Autocomplete(
    document.getElementById('id-google-address-b'),
    {
-       types: ['address'],
+       types: ['geocode'],
        componentRestrictions: {'country': ['uganda']},
+       //bounds: makerereBounds,
    })
   
   autocomplete_b.addListener('place_changed', function(){
@@ -77,7 +82,9 @@ function onPlaceChanged (addy){
             $('#' + lat_id).val(latitude) 
             $('#' + long_id).val(longitude) 
 
-            CalcRoute()
+            
+
+            //CalcRoute()
         } 
     }); 
 }
@@ -93,7 +100,6 @@ function validateForm() {
     });
     return valid
 }
-
 
 function CalcRoute(){
 
@@ -115,16 +121,4 @@ function CalcRoute(){
     }
 
 }
-
-
-// <!-- JavaScript code with modifications -->
-// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places&callback=initMap"></script>
-// <script>
-
-// $.getScript("https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places&callback=initMap");
-//     function initMap() {
-//         // Register the initAutocomplete function to be called after the Google Maps API is loaded
-//         initAutocomplete();
-//     }
-
-    
+   
