@@ -109,6 +109,8 @@ function CalcRoute(){
           long_a: $('#id-long-a').val(),
           lat_b: $('#id-lat-b').val(),
           long_b: $('#id-long-b').val(),
+          // Get the selected travel mode from the dropdown
+          travel_mode: $('#id-travel-mode').val() 
       };
 
       var esc = encodeURIComponent;
