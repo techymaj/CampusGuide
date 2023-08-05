@@ -35,6 +35,7 @@ def map(request):
 	"long_b": long_b,
 	"origin": f'{lat_a}, {long_a}',
 	"destination": f'{lat_b}, {long_b}',
+	# "travel_mode":f'{travel_mode}',
 	"directions": directions,
 
 	}
