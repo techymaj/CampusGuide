@@ -3,13 +3,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Campus Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- visit https://fonts.google.com/specimen/Courier+Prime?preview.text_type=custom to get script-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'main.css' %}"></link>
+  <style>
+    #background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
 
+    #logo {
+      height: 5rem;
+      width: 5rem;
+    }
+
+    .btn-get-directions {
+      padding-top: .6rem;
+      padding-bottom: .6rem;
+      margin-top: 1rem;
+      font-weight: 700;
+      border-radius: 1px;
+      color: green;
+    }
+  </style>
+
+  <style>
+    .onboarding-message {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  </style>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <!-- This allows us to extend the head scripts in HTML docs that have special requirements-->
   {% block extend_head %}
 
@@ -17,6 +51,7 @@
 
 </head>
 <body>
+
 
   <!-- This allows us to extend the nav bar in HTML docs that have special requirements-->
   {% block extend_nav %}
@@ -42,7 +77,18 @@
   {% endblock %}
 
   <script src="{% static 'main.js' %}"></script>
-  
+  <script>
+    var showText = function (target, message, index, interval) {   
+  if (index < message.length) {
+    $(target).append(message[index++]);
+    setTimeout(function () { showText(target, message, index, interval); }, interval);
+  }
+}
 
+$(function () {
+  showText("#msg", "Hello, use our site to locate places at Makerere University!", 0, 300);   
+  showText("#msg2", "Hurray! Your directions are ready!", 0, 100);   
+});
+  </script>
 </body>
 </html>
