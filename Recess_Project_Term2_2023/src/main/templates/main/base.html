@@ -36,6 +36,13 @@
       color: green;
     }
   </style>
+
+  <style>
+    .onboarding-message {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  </style>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <!-- This allows us to extend the head scripts in HTML docs that have special requirements-->
   {% block extend_head %}
@@ -79,7 +86,8 @@
 }
 
 $(function () {
-  showText("#msg", "Hello, use our site to locate places at Makerere!", 0, 500);   
+  showText("#msg", "Hello, use our site to locate places at Makerere University!", 0, 300);   
+  showText("#msg2", "Hurray! Your directions are ready!", 0, 100);   
 });
   </script>
 </body>
