@@ -45,6 +45,7 @@
 </head>
 <body>
 
+
   <!-- This allows us to extend the nav bar in HTML docs that have special requirements-->
   {% block extend_nav %}
 
@@ -69,7 +70,17 @@
   {% endblock %}
 
   <script src="{% static 'main.js' %}"></script>
-  
+  <script>
+    var showText = function (target, message, index, interval) {   
+  if (index < message.length) {
+    $(target).append(message[index++]);
+    setTimeout(function () { showText(target, message, index, interval); }, interval);
+  }
+}
 
+$(function () {
+  showText("#msg", "Hello, use our site to locate places at Makerere!", 0, 500);   
+});
+  </script>
 </body>
 </html>
