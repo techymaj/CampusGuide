@@ -18,8 +18,8 @@ let autocomplete_b;
 function initAutocomplete() {
 
     var makerereBounds = new google.maps.LatLngBounds(
-        new google.maps.LatLng(0.3404, 32.5633),
-        new google.maps.LatLng(0.3278, 32.5738)
+        new google.maps.LatLng(0.34, 32.57),
+        new google.maps.LatLng(0.33, 32.58)
       );
 
   autocomplete_a = new google.maps.places.Autocomplete(
