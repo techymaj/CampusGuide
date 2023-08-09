@@ -18,22 +18,31 @@
 
   <div id="icon-container"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js">
-  
-  <script>
-    var animation = bodymovin.loadAnimation({
-    container: document.getElementById('icon-container'),
-    path: "{% static 'data.json' %}",
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    name: "Demo Animation",
-  });
-  </script>
-    
-    <lottie-player src="{% static 'data.json' %}" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"
+  >
 
-    <div id="msg" class="onboarding-message"/>
+    <script>
+      var animation = bodymovin.loadAnimation({
+      container: document.getElementById('icon-container'),
+      path: "{% static 'data.json' %}",
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: "Demo Animation",
+    });
+  </script>
+
+  <lottie-player
+    src="{% static 'data.json' %}"
+    background="transparent"
+    speed="1"
+    style="width: 300px; height: 300px"
+    loop
+    autoplay
+  ></lottie-player>
+
+  <div id="msg" class="onboarding-message" />
 </ul>
 
 {% endblock %} {% block content %}
@@ -70,7 +79,6 @@
       <option value="DRIVING">Driving</option>
       <option value="WALKING">Walking</option>
       <option value="bicycling">Bicycling</option>
-      <option value="transit">Transit</option>
     </select>
   </form>
 </div>
