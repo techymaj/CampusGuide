@@ -56,7 +56,9 @@ ROOT_URLCONF = "CampusGuide.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            BASE_DIR / "Templates",
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -118,7 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATICFILES_DIRS = [
-        os.path.join(BASE_DIR,'static'),
+        # os.path.join(BASE_DIR,'static'),
+        BASE_DIR / "static",
         ]
 
 STATIC_URL = '/static/'
