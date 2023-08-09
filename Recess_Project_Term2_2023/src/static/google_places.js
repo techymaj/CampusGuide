@@ -7,6 +7,8 @@ function initMapp() {
     
     $("#btn").on("click", function () {
         CalcRoute();
+        //console.log("Travel mode:", $('#id-travel-mode').val());
+
     });
 }
 
