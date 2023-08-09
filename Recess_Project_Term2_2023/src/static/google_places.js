@@ -17,17 +17,17 @@ let autocomplete_b;
 
 function initAutocomplete() {
 
-    // var makerereBounds = new google.maps.LatLngBounds(
-    //     new google.maps.LatLng(0.308578, 32.573719),
-    //     new google.maps.LatLng(0.335596, 32.589585)
-    //   );
+    var makerereBounds = new google.maps.LatLngBounds(
+        new google.maps.LatLng(0.34, 32.57),
+        new google.maps.LatLng(0.33, 32.58)
+      );
 
   autocomplete_a = new google.maps.places.Autocomplete(
    document.getElementById('id-google-address-a'),
    {
        types: ['geocode'],
        componentRestrictions: {'country': ['uganda']},
-       //bounds: makerereBounds,
+       bounds: makerereBounds,
    })
   
   autocomplete_a.addListener('place_changed', function(){
@@ -40,7 +40,7 @@ function initAutocomplete() {
    {
        types: ['geocode'],
        componentRestrictions: {'country': ['uganda']},
-       //bounds: makerereBounds,
+       bounds: makerereBounds,
    })
   
   autocomplete_b.addListener('place_changed', function(){
