@@ -1,12 +1,18 @@
 
 $.getScript( "https://maps.googleapis.com/maps/api/js?key=" + google_api_key + "&libraries=places") 
 .done(function( script, textStatus ) {
-    google.maps.event.addDomListener(window, "load", initMap)
+    // google.maps.event.addDomListener(window, "load", initMap)
+    document.addEventListener("DOMContentLoaded", function() {
+      initMap();
+  });
 
 })
 
 
 function initMap() {
+  //var travel=getUrlParameter('travel_mode');
+  console.log(getUrlParameter('lat_a'));
+ // console.log(travel);
   var lat_a = parseFloat(getUrlParameter('lat_a'));
   var long_a = parseFloat(getUrlParameter('long_a')); 
 
@@ -19,8 +25,8 @@ function initMap() {
   directionsDisplay.setMap(map);
 
   // Get the travel_mode from the URL or any other source
-  var travel_mode = getUrlParameter('travel_mode');
-  console.log(travel_mode);
+  var travel_mode =getUrlParameter('travel_mode');
+  //console.log(travel_mode);
 
   calculateAndDisplayRoute(directionsService, directionsDisplay, lat_a, long_a, travel_mode);
 }
@@ -33,6 +39,8 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay, lat_a, l
   var origin = new google.maps.LatLng(lat_a, long_a);
   var destination = new google.maps.LatLng(lat_b, long_b);
 
+  /* The `directionsService.route()` function is used to request directions from the Google Maps
+  Directions API. It takes in several parameters: */
   directionsService.route({
       origin: origin,
       destination: destination,
