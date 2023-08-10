@@ -28,8 +28,6 @@ Prepare to be mesmerized by the mesmerizing user interface that adds a touch of 
 
 - **Route Planning:** Map your own path through the enchanted campus! Plan a journey from your current location or set a starting point, and the app shall weave a magical route to your desired destination! 🗺️
 
-- **User Authentication:** Unlock the secrets of personalization! Students and staff can access their unique features, such as saving favorite locations or tapping into additional campus services! 🔐
-
 - **Responsive Design:** The app magically adapts to any device, be it a grand desktop, a mystical tablet, or a humble smartphone! Enjoy a seamless experience wherever you roam! 📱
 
 ## Installation 🧙
@@ -48,15 +46,15 @@ To invoke the enchantment of the Campus Map Web App on your local realm, follow 
 
 3. Unleash the power of dependencies:
    ```bash
-   npm install
+   pip install -r requirements.txt
    ```
 
 4. Initiate the spellbinding development server:
    ```bash
-   npm start
+   python manage.py runserver
    ```
 
-5. Open your web browser and behold the magic at `http://localhost:3000`! 🌐
+5. Open your web browser and behold the magic at `http://localhost:8000`! 🌐
 
 ## Usage 🧞
 
