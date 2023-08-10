@@ -76,7 +76,7 @@ function onPlaceChanged(addy) {
         lat_id = 'id-lat-a';
         long_id = 'id-long-a';
     }
-
+    var geocoder = new google.maps.Geocoder()
     var address = document.getElementById(el_id).value;
 
     if (address === '') {
@@ -88,7 +88,7 @@ function onPlaceChanged(addy) {
             }
         });
     } else {
-        var geocoder = new google.maps.Geocoder();
+        //var geocoder = new google.maps.Geocoder();
 
         geocoder.geocode({ 'address': address }, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
